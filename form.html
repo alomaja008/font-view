@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal fashion fix form
+    <abbr title="RFF">Royal fashion fix</abbr>
+         </title>
+</head>
+<body>
+    
+    <h2>
+        Enter your Name
+    </h2>
+    <form id="nameform" onsubmit="showAlert(event)">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        function showAlert(event){
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+
+            alert(`hello, ${name}! your form was submited successfly.`);
+        }
+    </script>
+</body>
+</html>
